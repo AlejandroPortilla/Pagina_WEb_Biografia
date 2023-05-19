@@ -50,21 +50,43 @@
     <br>
     <b>Inspiracion:</b>Alejandro se inspira en sus padres y su sensei de karate. Sus padres siempre han apoyado sus sueños y lo han ayudado a alcanzar sus metas. Su sensei le ha enseñado la importancia de la disciplina y el trabajo duro. Alejandro está agradecido por el apoyo de su familia y amigos y está decidido a hacerlos sentir orgullosos<span id="meta"></span>
     <br>
-    <b>en el siguiente link algo de mi hace unos años</b>
-    <a href="url">https://www.youtube.com/watch?v=rRhIvtBQr7M&ab_channel=SandraPatriciaZamoraCaraballo</a>
-    <b>ahora otra cosa aun mas vieja</b>
-    <a href="url">https://www.youtube.com/watch?v=P0y-NQrfFdg&t=2s&ab_channel=FREDDYENRIQUEPORTILLAORTIZ</a>
+    
 
   </p>
   <input type="text" id="color" value="red">
-  <button id="changeColor">Cambia el color de la pagina</button>
-  <audio src="y2mate.com - If Only  Dove Cameron Sub Español.mp3" controls></audio>
+  <button id="changeColor">Cambia el color de la pagina colocando un color en ingles</button>
+  <br><br><audio src="y2mate.com - If Only  Dove Cameron Sub Español.mp3" controls></audio>
   <script>
     document.getElementById("changeColor").addEventListener("click", function() {
       var color = document.getElementById("color").value;
       document.body.style.backgroundColor = color;
     });
   </script>
-</body>
+  <style>
+    button {
+      background-color: #600f0f;
+      color: #fff;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    </style>
+    <br><br><button onclick="window.open('https://www.youtube.com/watch?v=rRhIvtBQr7M&ab_channel=SandraPatriciaZamoraCaraballo')">Mirame peleando hace unos años</button>
+    <br><form action="feedback.php" method="post">
+      <input type="text" name="name" placeholder="Your name">
+      <input type="number" name="age" placeholder="Your age">
+      <select name="satisfaction">
+        <option value="1">Very dissatisfied</option>
+        <option value="2">Dissatisfied</option>
+        <option value="3">Neutral</option>
+        <option value="4">Satisfied</option>
+        <option value="5">Very satisfied</option>
+      </select>
+      <textarea name="feedback" placeholder="Your feedback"></textarea>
+      <input type="submit" value="Submit feedback">
+    </form>
+
+  </body>
 </html>
 
